@@ -1,0 +1,524 @@
+ @page {
+ size: A4;
+}
+@media print {
+  html, body {
+    width: 215mm;
+    height: 295mm;
+  }
+}
+  .container { 
+   display: grid; 
+  grid-template-columns: repeat(44, .50cm); 
+  grid-auto-rows: .5cm; 
+ 
+}
+
+#box{
+
+border: 2px solid transparent;
+}
+.logo{
+  grid-column-start: 1; 
+  grid-column-end: 7; 
+  grid-row-start: 1; 
+  grid-row-end: 6;
+/*   background-color:red; */
+}
+
+.heading{
+  grid-column-start:7;
+  grid-column-end: 36;
+  grid-row-start: 1; 
+  grid-row-end: 3;
+  font-family: algerian;
+  font-size:.4cm;  
+  line-height: .28;
+}
+
+.degree{
+  grid-column-start:10;
+  grid-column-end: 13;
+  grid-row-start: 4; 
+  grid-row-end: 5;
+  
+    
+}
+
+.empty{
+  grid-column-start:13;
+  grid-column-end: 26;
+  grid-row-start: 4; 
+  grid-row-end: 5;
+  
+  
+  
+}
+
+.degree_1{
+  grid-column-start:26;
+  grid-column-end: 36;
+  grid-row-start: 4; 
+  grid-row-end: 5;
+  
+    
+}
+
+
+
+.heading p{
+  font-size:.25cm;
+  font-family: arial;
+  
+  
+}
+
+
+.marksheet_no{
+   grid-column-start:36;
+  grid-column-end: 44;
+  grid-row-start: 3; 
+  grid-row-end: 5;
+  
+  
+  
+}
+.photo{
+  grid-column-start:36;
+  grid-column-end: 44;
+  grid-row-start: 5; 
+  grid-row-end: 10;
+  
+}
+
+.section2_container1{ 
+  grid-column-start:1;
+  grid-column-end: 6;
+  grid-row-start: 5; 
+  grid-row-end: 10;
+  
+}
+.section2_container2{ 
+  grid-column-start:6;
+  grid-column-end: 22;
+  grid-row-start: 5; 
+  grid-row-end: 10;
+  
+}
+
+.section2_container3{ 
+  grid-column-start:22;
+  grid-column-end: 29;
+  grid-row-start: 5; 
+  grid-row-end: 10;
+  
+}
+
+.section2_container4{ 
+  grid-column-start:29;
+  grid-column-end: 36;
+  grid-row-start: 5; 
+  grid-row-end: 10;
+  
+}
+
+.section3{
+  grid-column-start:1;
+  grid-column-end: 44;
+  grid-row-start: 10; 
+  grid-row-end: 12;
+}
+
+
+.semester{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+    
+}
+.subject_code{  
+  grid-column-start:2;
+  grid-column-end: 5;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  
+  
+}
+.title_paper{  
+  grid-column-start:5;
+  grid-column-end: 24;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+
+  
+}
+
+.credit{  
+  grid-column-start:24;
+  grid-column-end: 25;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left; 
+  
+}
+
+.max_int_marks{  
+  grid-column-start:25;
+  grid-column-end: 27;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+  
+}
+
+.max_ext_marks{  
+  grid-column-start:27;
+  grid-column-end: 29;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+  
+}
+
+.max_tot_marks{  
+  grid-column-start:29;
+  grid-column-end: 31;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+  
+}
+
+
+.int_marks_secured{  
+  grid-column-start:31;
+  grid-column-end: 33;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: right;
+  text-align: left;
+  
+}
+
+.ext_marks_secured{  
+  grid-column-start:33;
+  grid-column-end: 35;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+ 
+  
+}
+
+.tot_marks_secured{  
+  grid-column-start:35;
+  grid-column-end: 37;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+  
+}
+
+.grade_point{  
+  grid-column-start:37;
+  grid-column-end: 39;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+  
+}
+.grade{  
+  grid-column-start:39;
+  grid-column-end: 41;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+}
+
+.result{  
+  grid-column-start:41;
+  grid-column-end: 42;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: left;
+}
+
+.month_year{  
+  grid-column-start:42;
+  grid-column-end: 44;
+  grid-row-start: 12; 
+  grid-row-end: 52;
+  text-align: right;
+}
+
+.section4_container1{  
+  grid-column-start:1;
+  grid-column-end: 13;
+  grid-row-start: 52; 
+  grid-row-end: 57;
+  
+}
+.section4_container2{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 52; 
+  grid-row-end: 57;
+  
+}
+
+.section4_container21{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 52; 
+  grid-row-end: 53;
+  
+}
+
+.section4_container9{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 53; 
+  grid-row-end: 54;
+    
+}
+.section4_container10{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 54; 
+  grid-row-end: 55;
+  
+}
+
+.section4_container11{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 55; 
+  grid-row-end: 56;
+  
+}
+
+.section4_container12{  
+  grid-column-start:13;
+  grid-column-end: 15;
+  grid-row-start: 56; 
+  grid-row-end: 57;
+  
+}
+
+.section4_container7{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 52; 
+  grid-row-end: 57;
+  
+}
+
+.section4_container22{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 52; 
+  grid-row-end: 53;
+    
+}
+
+.section4_container13{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 53; 
+  grid-row-end: 54;
+    
+}
+.section4_container14{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 54; 
+  grid-row-end: 55;
+  
+}
+
+.section4_container15{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 55; 
+  grid-row-end: 56;
+  
+}
+
+.section4_container16{  
+  grid-column-start:15;
+  grid-column-end: 16;
+  grid-row-start: 56; 
+  grid-row-end: 57;
+  
+}
+
+
+.section4_container8{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 52; 
+  grid-row-end: 57;
+  
+}
+
+.section4_container23{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 52; 
+  grid-row-end: 53;
+
+  
+}
+.section4_container17{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 53; 
+  grid-row-end: 54;
+
+  
+}
+.section4_container18{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 54; 
+  grid-row-end: 55;
+  
+}
+
+.section4_container19{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 55; 
+  grid-row-end: 56;
+  
+}
+
+.section4_container20{  
+  grid-column-start:16;
+  grid-column-end: 18;
+  grid-row-start: 56; 
+  grid-row-end: 57;
+  
+}
+
+
+
+.section4_container3{  
+  grid-column-start:18;
+  grid-column-end: 24;
+  grid-row-start: 52; 
+  grid-row-end: 57;
+  
+}
+.section4_container4{  
+  grid-column-start:24;
+  grid-column-end: 28;
+  grid-row-start: 52; 
+  grid-row-end: 53;
+  
+}
+
+.section4_container24{  
+  grid-column-start:24;
+  grid-column-end: 28;
+  grid-row-start: 54; 
+  grid-row-end: 55;
+  
+}
+
+.section4_container25{  
+  grid-column-start:24;
+  grid-column-end: 28;
+  grid-row-start: 53; 
+  grid-row-end: 54;
+  
+}
+
+
+.section4_container26{  
+  grid-column-start:24;
+  grid-column-end: 35;
+  grid-row-start: 55; 
+  grid-row-end: 56;
+  
+}
+
+.section4_container27{  
+  grid-column-start:24;
+  grid-column-end: 28;
+  grid-row-start: 56; 
+  grid-row-end: 57;
+  
+}
+.section4_container5{  
+  grid-column-start:28;
+  grid-column-end: 44;
+  grid-row-start: 52; 
+  grid-row-end: 53;
+  text-align:right;
+  
+}
+.section4_container6{  
+  grid-column-start:28;
+  grid-column-end: 44;
+  grid-row-start: 53; 
+  grid-row-end: 57;
+  
+}
+
+.section5_container1{
+  grid-column-start:1;
+  grid-column-end: 44;
+  grid-row-start: 57; 
+  grid-row-end: 59;
+    
+}
+.section5_container2{
+  grid-column-start:1;
+  grid-column-end: 6;
+  grid-row-start: 59; 
+  grid-row-end: 60;
+    
+}
+.section5_container3{
+  grid-column-start:6;
+  grid-column-end: 14;
+  grid-row-start: 59; 
+  grid-row-end: 60;
+  font-weight:600; 
+  font-size:.3cm;
+    
+}
+
+.section5_container4{
+  grid-column-start:14;
+  grid-column-end: 21;
+  grid-row-start: 59; 
+  grid-row-end: 60;
+    
+}
+.section5_container5{
+  grid-column-start:21;
+  grid-column-end: 31;
+  grid-row-start: 59; 
+  grid-row-end: 60;
+  font-weight:600; 
+  font-size:.3cm;
+    
+}
+.section5_container6{
+  grid-column-start:31;
+  grid-column-end: 44;
+  grid-row-start: 59; 
+  grid-row-end: 60;
+   font-weight:600; 
+  font-size:.3cm;
+}
+.section5_container7{
+  grid-column-start:1;
+  grid-column-end: 44;
+  grid-row-start: 60; 
+  grid-row-end: 61;
+    
+}
